@@ -1,0 +1,19 @@
+
+  /*.jumbotron{*/
+  /*  color: maroon;*/
+    /*background-color: #F1F1F1;*/
+  /*  max-height: 150px;*/
+  /*}*/
+  
+
+  .jumbotron {
+    color: maroon;
+    padding: 0.5em 0.6em;
+    
+    h1 {
+      font-size: 3em;
+    }
+    p {
+      font-size: 2em;
+    }
+  }

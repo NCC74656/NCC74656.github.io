@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>StogaHub Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+  <!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+  <link rel="stylesheet" type="text/css" href="Alternate.css">
+  <style>
+    
+    .jumbotron {
+      background-size: cover;
+      margin: 60px 0px 0px 0px;
+    }
+    
+    .container-fluid .text-center {
+      background-color: yellow;
+    }
+    /* Allows hovering over navbar to trigger dropdown menu */
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+    .carousel {
+      height: 600px;
+      margin: 10px 0px 100px 0px;
+    }
+    .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: 0px;
+      height: 600px;
+    }
+
+    /* Hide the carousel text when the screen is less than 600 pixels wide */
+    @media (max-width: 600px) {
+      .carousel-caption {
+        display: none; 
+      }
+    }
+  
+    .container {
+      margin: 0px !important;
+      position: relative;
+      width: 100%;
+      background-size: cover;
+    }
+    .content {
+      position: relative;
+      z-index: 5;
+    }
+    .background {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background-color: Black;
+      z-index: 1;
+      /* These three lines are for transparency in all browsers. */
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+      filter: alpha(opacity=50);
+      opacity: .5;
+    }
+  </style>
+</head>
+<body>
+
+ <!--Navigation Bar -->
+<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">STOGAHUB</a>
+    </div>
+    <!--../Main%20Files/CHSLOGO.jpg-->
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-center">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">About 
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Who We Are</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">Contact Us</a></li>            
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Members 
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">CHS Website</a></li>
+            <li><a href="#">Stoga Music</a></li>
+            <li><a href="#">Stoga Library Index</a></li> 
+            <li><a href="#">Stoga News</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Clubs 
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Club List</a></li>
+            <li><a href="#">Register a Club</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Useful Stuff 
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Pinnacle</a></li>
+            <li><a href="#">Naviance</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="#">My Profile</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--JUMBOTRON-->
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="title" align="center" style="font-family:Lucida Console, Monaco, monospace">STOGAHUB</h1>
+      <p align="center">Home to Everything Stoga</p>
+  </div>
+</div>
+
+<div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        
+      <!--Edit: Moved the jumbotron out of the carousel. ~ VN-->
+      <!--<div class="container-fluid">-->
+      <!--  <div class="jumbotron">-->
+      <!--      <h1 class="title" align="center" style="font-family:Lucida Console, Monaco, monospace">STOGAHUB</h1>-->
+      <!--      <p align="center">Home to Everything Stoga</p>-->
+      <!--  </div>-->
+      <!--</div>-->
+        
+      <div class="item active">
+        <img src="//upload.wikimedia.org/wikipedia/commons/8/8e/Conestoga_High_School.jpg" alt="Conestoga High School">
+        <div class="carousel-caption">
+          <p>CODE CODE CODE</p>
+        </div>      
+      </div>
+  
+      <div class="item">
+        <img src="http://placehold.it/1200x400?text=Another Image Maybe" alt="Image">
+        <div class="carousel-caption">
+          <h3>More Sell $</h3>
+          <p>Lorem ipsum...</p>
+        </div>      
+      </div>
+    </div>
+  
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+  
+<div class="progress">
+  <div class="progress-bar progress-bar-striped active" role="progressbar"
+  aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%">
+    20%
+  </div>
+</div>
+
+<div class="container text-center">    
+  <h3>What We Do</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      <p>Current Project</p>
+    </div>
+    <div class="col-sm-4"> 
+      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      <p>Project 2</p>    
+    </div>
+    <div class="col-sm-4">
+      <div class="well">
+       <p>Some text..</p>
+      </div>
+      <div class="well">
+       <p>Some text..</p>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<footer class="container-fluid text-center">
+  <p>In Development</p>
+</footer>
+
+</body>
+</html>

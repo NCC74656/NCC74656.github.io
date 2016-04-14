@@ -1,0 +1,7 @@
+Plans:
+
+Make master club list in MySQL (database:clubs, table:clubs(int, name)).
+
+Design a propper account info screen outline.
+
+Link club signup to student info.
