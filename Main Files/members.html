@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--Mark Wolgin and Matt C. -->
+<!--Jason Tu -->
+<!--Computer Science Website 2015 -->
+<!--HTML 5 -->
+<html>
+     <head>
+        <link type="text/css" rel="stylesheet" href="../Resources/stylesheet.css" />
+        <title>Members</title>
+        
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script> 
+        $(function(){
+            $("#header").load("../header.html"); 
+        });
+        </script> 
+    </head>
+    <body>
+        <div class="container">
+            <!--<div style="position:absolute;left:20;z-index:1;top:0;">-->
+            <!--    <a href="../index.html"><img src="../Main%20Files/CHSLOGO.jpg" align="left" style="width:125px;height:70px;" alt="Conestoga High School" ></a>-->
+            <!--</div>-->
+            <div align="center">
+                <h1>
+                    Members
+                </h1>
+            </div>
+           
+           <div id="header"></div>
+           
+            <!--End Table -->
+            <!--Sign in sheet -->
+            <h>
+                <div align="center">Please sign in below</div>
+            </h>
+            
+            <div align="center">
+                <form action="../Admin/LOGIN.php" method="post" >
+                   <fieldset>
+                   Username <input type="text" name="user"/><br>
+                   Password <input type="text" name="pass"/><br>
+                   
+                   <input type="submit" value="Login"/><br>
+                   <a href="signup.html">Need an account?</a>
+                   </fieldset>
+               </form>
+            </div>
+
+            <div class="bottom">
+                
+            </div>
+        </div>
+    </body>
+</html>

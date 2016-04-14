@@ -1,0 +1,13 @@
+'Mark','Wolgin','123','wolginmark@test.com',4848,494949,27262,1111
+'John','Doe','345','jdoe@test.com',123,456,789,012
+'Luke','Skywalker','Darth','lskywalker@test.com',123,456,789,
+
+//Python TEST CODE!!
+import urllib2, urllib
+mydata=[fName, lName, password, email, hRoom,  sID,  sPin, grade] #The first is the var name the second is the value
+mydata=urllib.urlencode(input)
+path='http://stogapp-ncc-74656.c9.io/NOT.php'    #the url you want to POST to
+req=urllib2.Request(path, input)
+req.add_header("Content-type", "application/x-www-form-urlencoded")
+page=urllib2.urlopen(req).read()
+print page
