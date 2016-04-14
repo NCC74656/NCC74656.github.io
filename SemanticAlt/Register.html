@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Semantic CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css" rel="stylesheet">
+    <link href="semantic.css" rel="stylesheet">
+    <link href="animate.css" rel="stylesheet">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js">-->
+</head>
+  <body>
+    <div id="SemanticHeader"></div>
+    <div class="ui modal">
+      <div class="ui container" id="attached">
+        <div class="ui attached message">
+        <div class="header">
+        Welcome to Stoga Hub!
+        </div>
+        <p>Fill out this boring form to join Stoga Hub</p>
+        </div>
+        <form class="ui form attached fluid segment">
+          <div class="two fields">
+            <div class="field">
+              <label>First Name</label>
+              <input placeholder="First Name" type="text">
+            </div>
+            <div class="field">
+              <label>Last Name</label>
+              <input placeholder="Last Name" type="text">
+            </div>
+          </div>
+          <div class="field">
+            <label>E-mail</label>
+            <input placeholder="E-mail" type="text">
+          </div>
+          <div class="field">
+            <label>Student ID #</label>
+            <input placeholder="Student ID #" type="text">
+          </div>
+          <div class="field">
+            <label>Password</label>
+            <input type="password">
+          </div>
+          <div class="field">
+            <label>Confirm Password</label>
+            <input type="password">
+          </div>
+          <div class="inline field">
+            <div class="ui checkbox">
+              <input type="checkbox" id="terms">
+              <label for="terms">I agree to the terms and conditions</label>
+            </div>
+          </div>
+          <div class="g-recaptcha" data-sitekey="6LetQhsTAAAAAL2CqfCmbEv6GRIAx3RFpEZc78VH"></div>
+          <div class="ui blue submit button">Submit</div>
+        </form>
+        <div class="ui bottom attached warning message">
+          <i class="icon help"></i>
+          Already signed up? <a href="SemLogin.html">Login here</a> instead.
+    </div>
+  </div>
+  </div>
+  <!-- Standard jQuery, Semantic jQuery, and Javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.js"></script>
+  <script src="myscript.js"></script>
+  <script>
+  $(function(){
+    $("#SemanticHeader").load("SemanticHeader.html"); 
+  });
+  </script>
+  </body>
+</html>

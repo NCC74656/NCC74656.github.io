@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Semantic CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css" rel="stylesheet">
+    <link href="semantic.css" rel="stylesheet">
+    <link href="animate.css">
+    <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js">-->
+</head>
+  <body>
+  <div id="SemanticHeader"></div>
+    <!--<div class="ui container">-->
+    <div class="ui middle aligned center aligned grid">
+      <div class="column" id="login">
+        <!--<div class="ui container">-->
+          <form class="ui animated slideInDown large form" style="margin-top: 150px">
+            <div class="ui stacked raised padded login segment">
+              <div class="ui huge header">Log-in</div>
+              <div class="field">
+                <!--<label>Student ID #</label>-->
+                <input type="text" name="Student-ID" placeholder="Student ID #">
+              </div>
+              <div class="field">
+                <!--<label>Password</label>-->
+                <input type="text" name="Passcode" placeholder="Password">
+              </div>
+              <div class="field">
+                <div class="ui checkbox">
+                  <input type="checkbox" tabindex="0" class="hidden">
+                  <label>Remember Me</label>
+                </div>
+              </div>
+            <button class="ui fluid primary button" type="submit">Submit</button>
+          </div>
+          </form>
+          <div class="ui message">
+            <a href="#">Need an Account?</a>
+          </div>
+        <!--</div>-->
+      </div>
+    <!--</div>-->
+  </div>
+    <!-- Standard jQuery, Semantic jQuery, and Javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.js"></script>
+  <script src="myscript.js"></script>
+  <script>
+  $(function(){
+    $("#SemanticHeader").load("SemanticHeader.html"); 
+  });
+  </script>
+  </body>
+</html>
